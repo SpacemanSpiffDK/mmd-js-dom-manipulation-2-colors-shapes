@@ -24,6 +24,7 @@
 .flex {
 	display: flex;
 	align-content: space-between;
+	flex-wrap: wrap;
 }
 
 .flex-collapse-left {

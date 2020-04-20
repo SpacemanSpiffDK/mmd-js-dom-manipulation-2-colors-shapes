@@ -7,19 +7,9 @@
 body {
 	font-family: sans-serif;
 	padding: 5vw;
-	font-size: 4vw;
+	font-size: 1rem;
 	line-height: 1.4;
 }
-
-@media (min-width: 641px) {
-	body {
-		padding: .8rem;
-		font-size: 1rem;
-	}
-}
-
-
-/* test styles */
 
 body {
 	background-color: var(--frp-color-background);	
@@ -46,23 +36,44 @@ body {
 	box-shadow: var(--frp-shadow-depressed);
 }
 
-@media (min-width: 641px){
-	.flex > div {
-		width: 50%;
-	}
-}
-
-@media (max-width: 640px){
-	.flex {
-		display: block;
-	}
-
-	.flex > div {
-		width: 100%;
-		margin-bottom: var(--frp-density-m);
-	}
-}
-
 h1, p {
 	margin-bottom: var(--frp-density-m);
 }
+article {
+	padding: 5vw;
+}
+
+#output	{
+	margin: 4vw 0;
+}
+
+.box {
+	width: calc(85vw / 10);
+	height: calc(85vw / 10);
+}
+
+.box > div {
+	transition: all .5s ease-out;
+}
+
+/* colors */
+
+.red 		{ border-color: red; background-color: red;}
+.purple 	{ border-color: purple; background-color: purple;}
+.blue 		{ border-color: blue; background-color: blue;}
+.teal 		{ border-color: teal; background-color: teal;}
+.green 		{ border-color: green; background-color: green;}
+.chartreuse { border-color: chartreuse; background-color: chartreuse;}
+.yellow 	{ border-color: yellow; background-color: yellow;}
+.orange 	{ border-color: orange; background-color: orange;}
+
+/* shapes */
+.square { width: 100%; height: 100%; }
+.circle { width: 100%; height: 100%; border-radius: 50%; }
+.diamond {
+	width: 70%;
+    height: 70%;
+    margin: 15%;
+	transform: rotate(45deg);
+}
+
